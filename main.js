@@ -197,14 +197,14 @@ document.querySelector('#app').innerHTML = `
   <div class="wrapper">
     <header>
       <span id="prev" class="icons">
-        <img src="./public/left-arrow.svg" alt="next" width="30" height="30" />
+        <img src="./left-arrow.svg" alt="next" width="30" height="30" />
       </span>
       <p class="current-date">
         <span class="month"></span>
         <span class="year"></span>
       </p>
       <span id="next" class="icons">
-        <img src="./public/right-arrow.svg" alt="next" width="30" height="30" />
+        <img src="./right-arrow.svg" alt="next" width="30" height="30" />
       </span>      
     </header>
     <div class="calendar">
