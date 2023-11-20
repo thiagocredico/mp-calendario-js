@@ -16,13 +16,40 @@ body {
   background: #111827;
 }
 
+.calendar-container {
+  text-align: center;
+  color: white;
+  max-width: 450px;
+  margin: 20px; 
+}
+
+.language-select{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.select-text {
+  display: flex
+}
+#languageSelector {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #D1D5DB;
+  background-color: #111827;
+  color: var(--gray-300, #D1D5DB);
+  font-weight: 400;
+  padding: 5px;
+  cursor: pointer;
+}
 .wrapper {
-  width: 90%;
   background: #111827;
   border-radius: 10px;
   border: solid 1px #f2f2f2;
-  max-width: 450px;
-  margin: 20px; 
+
 }
 
 .wrapper header {
@@ -77,6 +104,7 @@ header .current-date {
 .calendar .weeks li {
   font-weight: 500;
   cursor: default;
+  text-transform: lowercase;
 }
 
 .calendar .days li {
@@ -91,7 +119,7 @@ header .current-date {
 }
 
 .days li.active {
-  color: #6EE7B7;
+  color: #6EE7B7 !important;
 }
 
 .days li::before {
@@ -108,22 +136,28 @@ header .current-date {
 
 .days li.active::before {
   background: #374151;
+  
 }
 
 .days li:not(.active):hover::before {
   background: #374151;
 }
 
-header .current-date .month {
+header .current-date {
   font-size: 1.45rem;
   font-weight: 500;
+  cursor: default;
+}
+
+header .current-date .month {
   color: white;
+  cursor: default;
+  text-transform: lowercase;
 }
 
 header .current-date .year {
-  font-size: 1.45rem;
-  font-weight: 500;
   color: #6EE7B7;
+  cursor: default;
 }
 
 @media screen and (min-width: 768px) {
