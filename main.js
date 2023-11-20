@@ -1,4 +1,6 @@
 import './style.css';
+import rightArrow from './right-arrow.svg'
+import leftArrow from './left-arrow.svg'
 
 let currentLanguage = 'pt';
 
@@ -197,14 +199,14 @@ document.querySelector('#app').innerHTML = `
   <div class="wrapper">
     <header>
       <span id="prev" class="icons">
-        <img src="./left-arrow.svg" alt="next" width="30" height="30" />
+        <img src="${leftArrow}" alt="prev" width="30" height="30" />
       </span>
       <p class="current-date">
         <span class="month"></span>
         <span class="year"></span>
       </p>
       <span id="next" class="icons">
-        <img src="./right-arrow.svg" alt="next" width="30" height="30" />
+        <img src="${rightArrow}" alt="next" width="30" height="30" />
       </span>      
     </header>
     <div class="calendar">
